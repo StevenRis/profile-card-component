@@ -21,6 +21,7 @@ h6 {
 }
 
 .container-fluid {
+  position: relative;
   background-color: #19a2ae;
   height: 100vh;
   border: 1px dotted green;
@@ -41,10 +42,13 @@ h6 {
   width: 320px;
   margin: 0 auto;
   border-radius: 15px;
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-card .bg-dotted {
-  background-image: url(/images/bg-pattern-card.svg);
+  background-image: url(../images/bg-pattern-card.svg);
+  position: relative;
   width: 100%;
   height: 150px;
   border-radius: 15px 15px 0 0;
@@ -85,24 +89,20 @@ h6 {
   margin: 25px 20px;
 }
 
-.stats-subtitle {
+.stats .stats-subtitle {
   padding-top: 5px;
   letter-spacing: 1px;
 }
 
 .circle-top {
-  position: absolute;
-}
-
-.circle-top {
-  top: -176px;
-  left: -265px;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .circle-bottom {
-  position: absolute;
-  top: 50vh;
-  left: 50vh;
-  overflow: hidden;
+  position: fixed;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
 }
 /*# sourceMappingURL=style.css.map */
